@@ -32,6 +32,16 @@ body {
     margin: 0 auto;
 }
 
+/* -------------- Submenu ------------------ */
+.header__submenu-1,
+.header__submenu-2,
+.header__submenu-3,
+.header__submenu-4,
+.header__submenu-5,
+.header__submenu-6 {
+    left: -5%;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -75,5 +85,5 @@ body {
 }
 
 .common-link:hover {
-    color: #f1b400;
+    color: rgb(204, 102, 255) !important;
 }

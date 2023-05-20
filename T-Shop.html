@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
 </head>
 
 <body>
@@ -143,58 +144,135 @@
                         <img src="./assets/image/T-Logo.png" alt="">
                     </div>
                     <div class="header__menu">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    TRANG CHỦ
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
+                        <ul id="header__menu-nav">
+                            <li class="header__menu--items">
+                                <a href="#" class="menu-title">
                                     GIỚI THIỆU
                                     <i class="fa-sharp fa-solid fa-caret-down"></i>
                                 </a>
+                                <div class="header__submenu header__submenu-1">
+                                    <ul class="header__submenu-list">
+                                        <li class="header__submenu-item">
+                                            <a href="#" class="header__submenu-link">Home Page 1</a>
+                                        </li>
+                                        <li class="header__submenu-item">
+                                            <a href="#" class="header__submenu-link">Home Page 2</a>
+                                        </li>
+                                        <li class="header__submenu-item">
+                                            <a href="#" class="header__submenu-link">Home Page 3</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
-                            <li>
-                                <a href="#">
+                            <li class="header__menu--items">
+                                <a href="#" class="menu-title">
                                     SẢN PHẨM
                                     <i class="fa-sharp fa-solid fa-caret-down"></i>
                                 </a>
+                                <div class="header__submenu header__submenu-2">
+                                    <ul class="header__submenu-list">
+                                        <li class="header__submenu-item">
+                                            <a href="#" class="header__submenu-link">Product number 1</a>
+                                        </li>
+                                        <li class="header__submenu-item">
+                                            <a href="#" class="header__submenu-link">Product number 2</a>
+                                        </li>
+                                        <li class="header__submenu-item">
+                                            <a href="#" class="header__submenu-link">Product number 3</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
-                            <li>
-                                <a href="#">
+                            <li class="header__menu--items">
+                                <a href="#" class="menu-title">
                                     DỊCH VỤ
                                     <i class="fa-sharp fa-solid fa-caret-down"></i>
                                 </a>
+                                <div class="header__submenu header__submenu-3">
+                                    <ul class="header__submenu-list">
+                                        <li class="header__submenu-item">
+                                            <a href="#" class="header__submenu-link">Chăm sóc KH</a>
+                                        </li>
+                                        <li class="header__submenu-item">
+                                            <a href="#" class="header__submenu-link">Lấy lại mật khẩu</a>
+                                        </li>
+                                        <li class="header__submenu-item">
+                                            <a href="#" class="header__submenu-link">Bảo hành sản phẩm</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
-                            <li>
-                                <a href="#">
+                            <li class="header__menu--items">
+                                <a href="#" class="menu-title">
                                     HỖ TRỢ
                                     <i class="fa-sharp fa-solid fa-caret-down"></i>
                                 </a>
+                                <div class="header__submenu header__submenu-4">
+                                    <ul class="header__submenu-list">
+                                        <li class="header__submenu-item">
+                                            <a href="#" class="header__submenu-link">Hỗ trợ chăm sóc KH</a>
+                                        </li>
+                                        <li class="header__submenu-item">
+                                            <a href="#" class="header__submenu-link">Hỗ trợ tài khoản</a>
+                                        </li>
+                                        <li class="header__submenu-item">
+                                            <a href="#" class="header__submenu-link">Hỗ trợ đăng nhập</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
-                            <li>
-                                <a href="#">
+                            <li class="header__menu--items">
+                                <a href="#" class="menu-title">
                                     DIỄN ĐÀN
                                 </a>
+                                <div class="header__submenu header__submenu-5">
+                                    <ul class="header__submenu-list">
+                                        <li class="header__submenu-item">
+                                            <a href="#" class="header__submenu-link">Công nghệ</a>
+                                        </li>
+                                        <li class="header__submenu-item">
+                                            <a href="#" class="header__submenu-link">Sự kiện sắp diễn ra</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
-                            <li>
-                                <a href="#">
+                            <li class="header__menu--items">
+                                <a href="#" class="menu-title">
                                     LIÊN HỆ
                                 </a>
+                                <div class="header__submenu header__submenu-6">
+                                    <ul class="header__submenu-list">
+                                        <li class="header__submenu-item">
+                                            <a href="#" class="header__submenu-link">Hotline</a>
+                                        </li>
+                                        <li class="header__submenu-item">
+                                            <a href="#" class="header__submenu-link">Fanpage</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                         </ul>
                     </div>
                     <div class="header__search-area">
-                        <div class="header__search-icon">
-                            <i class="span-icon fa-solid fa-cart-shopping"></i>
-                        </div>
-                        <div class="header__search-icon">
-                            <div class="search-input">
-                                <input type="text" placeholder="Tìm kiếm">
+                        <div class="header__search-icon header__search-icon--first">
+                            <div class="search-input search-input--close">
+                                <input id="input" type="text" placeholder="Tìm kiếm">
+                                <!-- History search -->
+                                <div class="search-input--history">
+                                    <ul class="search--history_list">
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <i class="span-icon span-icon--hidden fa-solid fa-magnifying-glass"></i>
+                            <i class="span-icon span-icon--hidden span-icon--search fa-solid fa-magnifying-glass"></i>
                         </div>
+                        <div class="header__search-icon">
+                            <i class="span-icon span-icon--cart fa-solid fa-cart-shopping"></i>
+                        </div>
+
                     </div>
                 </div>
             </div>
