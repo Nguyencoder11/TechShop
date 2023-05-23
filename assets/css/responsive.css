@@ -1,0 +1,67 @@
+/* Mobile Screen */
+@media only screen and (max-width: 428px) {
+    .header__nav-lists {
+        display: none;
+    }
+
+    .move__wrap-column {
+        width: 100%;
+    }
+
+    .footer__wrap-column {
+        width: 100%;
+    }
+
+    .social__link-to {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+}
+
+/* Tablet Screen */
+@media only screen and((min-width: 429px) and (max-width: 884px)) {
+    .common-flex {
+        width: 50%;
+    }
+}
+
+/* PC Screen */
+@media only screen and (min-width: 885px) {
+    .blog__posts-items.tab {
+        width: 25%;
+    }
+}
+
+
+/* Tablet and PC screen */
+@media only screen and (min-width: 429px) {
+    .header__nav-lists {
+        display: block;
+    }
+
+    .header__menu {
+        display: block;
+    }
+
+    .move__wrap-column {
+        width: calc(100% / 3);
+    }
+}
+
+/* Tablet and Mobile screen */
+@media only screen and (max-width: 884px) {
+    .header__menu {
+        display: none;
+    }
+
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .blog__posts-items.mo {
+        width: 100%;
+    }
+}
