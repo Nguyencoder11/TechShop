@@ -467,6 +467,7 @@ input[id="input"]::placeholder {
 .slider {
     position: relative;
     padding-top: 50%;
+    margin-top: var(--header-height);
 }
 
 .slider .text-content {

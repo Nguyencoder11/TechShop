@@ -1,7 +1,7 @@
 :root {
     --white-color: #fff;
     --purple-color: rgb(165, 0, 165);
-    --header-height: 120px;
+    --header-height: 110px;
     --navbar-height: 34px;
     --menu-height: calc(var(--header-height) - var(--navbar-height));
 }
@@ -86,4 +86,12 @@ body {
 
 .common-link:hover {
     color: rgb(204, 102, 255) !important;
+}
+
+
+.fixed-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
 }
