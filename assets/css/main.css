@@ -1,3 +1,17 @@
+body::-webkit-scrollbar {
+    width: 5px;
+    background-color: #ffffff67;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-image: linear-gradient(-45deg, var(--purple-color), var(--white-color), var(--purple-color));
+}
+
 h3 {
     color: #999;
     margin-left: 12px;
