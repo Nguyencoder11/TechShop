@@ -1,7 +1,19 @@
 /* Only Mobile Screen */
 @media only screen and (max-width: 26.75em) {
+    .header__nav {}
+
     .header__nav-lists {
         display: none;
+    }
+
+    .header__container {
+        padding: 0;
+    }
+
+    .header__search-area {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
     }
 
     .move__wrap-column {
@@ -18,6 +30,17 @@
         justify-content: center;
     }
 
+    .banner__content {
+        flex-direction: column;
+    }
+
+    .banner__content-imgs {
+        width: 100%;
+    }
+
+    .banner__content-imgs:nth-child(1) {
+        margin-bottom: 5px;
+    }
 }
 
 /* Only Tablet Screen */
@@ -36,6 +59,14 @@
 
 /* Tablet and PC screen */
 @media only screen and (min-width: 26.8125em) {
+    .menu-icon-on-mobile {
+        display: none;
+    }
+
+    .mobile-sign {
+        display: none;
+    }
+
     .header__nav-lists {
         display: block;
     }
@@ -56,12 +87,12 @@
     }
 
     .header__container {
-        display: flex;
         justify-content: space-between;
     }
 
     .blog__posts-items.mo {
         width: 100%;
     }
-}
 
+
+}

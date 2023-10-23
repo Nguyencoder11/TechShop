@@ -68,6 +68,23 @@ header {
     height: var(--navbar-height);
 }
 
+.menu-icon-on-mobile {
+    padding: 10px 16px;
+}
+
+.menu-icon-on-mobile .ic-menu-icon {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.menu-icon-on-mobile:hover {
+    background-color: white;
+}
+
+.menu-icon-on-mobile:hover .ic-menu-icon {
+    color: #000;
+}
+
 .header__nav-lists {
     padding-left: 0;
     list-style: none;
@@ -90,6 +107,7 @@ header {
     margin: 0 8px;
     min-height: 25px;
     position: relative;
+    cursor: pointer;
 }
 
 .header__nav-item:nth-child(1):hover {
