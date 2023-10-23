@@ -44,16 +44,19 @@ h2::after {
     transform: translateX(-50%);
 }
 
-.common-flex {
+.tabs__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 16px;
+}
+
+.tabs__wrapper-items {
+    width: 25%;
     padding: 15px;
     margin-bottom: 16px;
 }
 
-.tabs__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 16px;
-}
 
 /* Header */
 header {
@@ -83,6 +86,12 @@ header {
 
 .menu-icon-on-mobile:hover .ic-menu-icon {
     color: #000;
+}
+
+.mobile-sign {
+    padding: 0 16px;
+    font-size: 1.2rem;
+    color: #fff;
 }
 
 .header__nav-lists {
