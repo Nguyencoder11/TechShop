@@ -1,5 +1,5 @@
-/* Mobile Screen */
-@media only screen and (max-width: 428px) {
+/* Only Mobile Screen */
+@media only screen and (max-width: 26.75em) {
     .header__nav-lists {
         display: none;
     }
@@ -20,23 +20,22 @@
 
 }
 
-/* Tablet Screen */
-@media only screen and((min-width: 429px) and (max-width: 884px)) {
+/* Only Tablet Screen */
+@media only screen and((min-width: 26.8125em) and (max-width: 55.25em)) {
     .common-flex {
         width: 50%;
     }
 }
 
-/* PC Screen */
-@media only screen and (min-width: 885px) {
+/* Only PC Screen */
+@media only screen and (min-width: 55.3125em) {
     .blog__posts-items.tab {
         width: 25%;
     }
 }
 
-
 /* Tablet and PC screen */
-@media only screen and (min-width: 429px) {
+@media only screen and (min-width: 26.8125em) {
     .header__nav-lists {
         display: block;
     }
@@ -51,7 +50,7 @@
 }
 
 /* Tablet and Mobile screen */
-@media only screen and (max-width: 884px) {
+@media only screen and (max-width: 55.25em) {
     .header__menu {
         display: none;
     }
@@ -65,3 +64,4 @@
         width: 100%;
     }
 }
+

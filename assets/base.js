@@ -34,3 +34,17 @@ document.addEventListener('click', function (event) {
         spanIcon.style.color = 'white';
     }
 });
+
+
+// Cho tai trang hoan thanh
+document.addEventListener("DOMContentLoaded", () => {
+    // Lang nghe su kien hanh dong tren trang web
+    document.addEventListener("click", () => {
+        document.body.style.scrollbarWidth = "auto;"
+    })
+
+    // Lang nghe su kien cuon trang
+    window.addEventListener("scroll", () => {
+        document.body.style.scrollbarWidth = "auto";
+    })
+});
