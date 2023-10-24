@@ -1,4 +1,4 @@
-// Automatic Slideshow - change image every 4 seconds
+// Automatic Slideshow - change image every 5 seconds
 var myIndex = 0;
 nextSlide();
 function nextSlide() {
@@ -11,7 +11,7 @@ function nextSlide() {
     if (myIndex > x.length) { myIndex = 1 }
     x[myIndex - 1].style.display = "block";
     // Thoi gian delay giua hai hoat canh
-    setTimeout(nextSlide, 4000);
+    setTimeout(nextSlide, 5000);
 }
 
 
@@ -36,15 +36,3 @@ document.addEventListener('click', function (event) {
 });
 
 
-// Cho tai trang hoan thanh
-document.addEventListener("DOMContentLoaded", () => {
-    // Lang nghe su kien hanh dong tren trang web
-    document.addEventListener("click", () => {
-        document.body.style.scrollbarWidth = "auto;"
-    })
-
-    // Lang nghe su kien cuon trang
-    window.addEventListener("scroll", () => {
-        document.body.style.scrollbarWidth = "auto";
-    })
-});

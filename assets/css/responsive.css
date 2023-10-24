@@ -134,8 +134,7 @@
         display: none;
     }
 
-    .header__nav-lists,
-    .header__menu {
+    .header__nav-lists {
         display: block;
     }
 
