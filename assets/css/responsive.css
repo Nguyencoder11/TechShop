@@ -9,7 +9,9 @@
     .header__container,
     .tabs__wrapper,
     .banner__content,
-    .top__arrivals {
+    .top__arrivals,
+    .top__arrivals-col.top__arrivals-col--second,
+    .grid.grid--blogs {
         padding: 0;
     }
 
@@ -32,7 +34,8 @@
 
     .featured__wrap,
     .banner__content,
-    .top__arrivals {
+    .top__arrivals,
+    .blog__posts {
         padding: 0 6px;
     }
 
@@ -64,14 +67,51 @@
         margin-bottom: 0;
     }
 
+    .top__arrivals,
+    .blog__posts {
+        margin-top: 42px;
+    }
+
     .banner__content-imgs a,
     .top__arrivals-col {
         margin: 0;
     }
+
+    .top__arrivals-col {
+        padding: 5px;
+    }
+
+    .top__arrivals-col .top__arrivals-group .top__wrapper-items {
+        padding: 5px 5px 8px 5px;
+    }
+
+    .blog__posts-items {
+        padding: 0 5px;
+        margin-bottom: 5px;
+    }
+
 }
 
-/* Only Tablet Screen */
-@media only screen and((min-width: 26.8125em) and (max-width: 55.25em)) {}
+/* Tablet and Mobile screen */
+@media only screen and (max-width: 55.25em) {
+    .header__menu {
+        display: none;
+    }
+
+    .header__container {
+        justify-content: space-between;
+    }
+
+    .tabs__wrapper-items {
+        width: 50%;
+        padding: 5px;
+        margin-bottom: 3px;
+    }
+
+    .blog__posts-items.mo {
+        width: 100%;
+    }
+}
 
 /* Only PC Screen */
 @media only screen and (min-width: 55.3125em) {
@@ -90,6 +130,25 @@
         display: none;
     }
 
+    .featured__wrap,
+    .banner__content {
+        padding: 0;
+    }
+
+    .banner__content-imgs a {
+        margin: 0;
+    }
+
+    .banner__content-imgs:nth-child(1) a {
+        margin: 0 5px;
+        margin-left: 21px;
+    }
+
+    .banner__content-imgs:nth-child(2) a {
+        margin: 0 5px;
+        margin-right: 21px;
+    }
+
     .header__nav-lists {
         display: block;
     }
@@ -101,26 +160,4 @@
     .move__wrap-column {
         width: calc(100% / 3);
     }
-}
-
-/* Tablet and Mobile screen */
-@media only screen and (max-width: 55.25em) {
-    .header__menu {
-        display: none;
-    }
-
-    .header__container {
-        justify-content: space-between;
-    }
-
-    .tabs__wrapper-items {
-        width: 50%;
-        padding: 5px;
-    }
-
-    .blog__posts-items.mo {
-        width: 100%;
-    }
-
-
 }
