@@ -94,6 +94,7 @@
 
 /* Tablet and Mobile screen */
 @media only screen and (max-width: 55.25em) {
+
     .header__menu {
         display: none;
     }
@@ -106,6 +107,12 @@
         width: 50%;
         padding: 5px;
         margin-bottom: 3px;
+    }
+
+    .tabs__wrapper-links {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     .blog__posts-items.mo {
@@ -122,17 +129,34 @@
 
 /* Tablet and PC screen */
 @media only screen and (min-width: 26.8125em) {
-    .menu-icon-on-mobile {
-        display: none;
-    }
-
+    .menu-icon-on-mobile,
     .mobile-sign {
         display: none;
     }
 
+    .header__nav-lists,
+    .header__menu {
+        display: block;
+    }
+
+    .move__wrap-column {
+        width: calc(100% / 3);
+    }
+
     .featured__wrap,
-    .banner__content {
+    .banner__content,
+    .top__arrivals,
+    .top__wrapper-items.quarter,
+    .blog__posts {
         padding: 0;
+    }
+
+    .featured__wrap .tabs__nav {
+        margin-bottom: 32px;
+    }
+
+    .banner__content {
+        margin-top: 5px;
     }
 
     .banner__content-imgs a {
@@ -149,15 +173,41 @@
         margin-right: 21px;
     }
 
-    .header__nav-lists {
-        display: block;
+    .top__arrivals-col {
+        padding: 15px 5px;
     }
 
-    .header__menu {
-        display: block;
+    .top__wrapper-items.item-1,
+    .top__wrapper-items.item-3,
+    .top__wrapper-items.item-5,
+    .top__wrapper-items.item-7 {
+        padding: 0 5px 0 0;
     }
 
-    .move__wrap-column {
-        width: calc(100% / 3);
+    .top__wrapper-items.item-2,
+    .top__wrapper-items.item-4,
+    .top__wrapper-items.item-6,
+    .top__wrapper-items.item-8 {
+        padding: 0 0 0 5px;
+        margin-bottom: 5px;
+    }
+
+    .top__wrapper-items.item-1,
+    .top__wrapper-items.item-2,
+    .top__wrapper-items.item-5,
+    .top__wrapper-items.item-6 {
+        margin-top: 0;
+    }
+
+    .top__wrapper-items.item-3,
+    .top__wrapper-items.item-4,
+    .top__wrapper-items.item-7,
+    .top__wrapper-items.item-8 {
+        margin-top: 3px;
+    }
+
+    .blog__posts-items {
+        padding: 0 5px;
+        margin-bottom: 8px;
     }
 }
