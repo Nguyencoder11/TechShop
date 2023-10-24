@@ -1,4 +1,4 @@
-// Automatic Slideshow - change image every 5 seconds
+// Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
 nextSlide();
 function nextSlide() {
@@ -34,5 +34,3 @@ document.addEventListener('click', function (event) {
         spanIcon.style.color = 'white';
     }
 });
-
-
