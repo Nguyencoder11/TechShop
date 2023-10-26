@@ -26,6 +26,26 @@
         width: 100%;
     }
 
+    .footer__wrap-column {
+        width: 50%;
+    }
+
+    .footer__content-title {
+        font-size: 1.4rem;
+    }
+
+    .footer__wrap-column .footer__wrap-content p {
+        font-size: 1rem;
+    }
+
+    .footer__wrap-content .social__link-to {
+        justify-content: flex-start;
+    }
+
+    .footer__wrap-content .social__link-to p {
+        font-size: 1.2rem;
+    }
+
     .social__link-to {
         display: flex;
         flex-flow: row wrap;
@@ -129,6 +149,7 @@
 
 /* Tablet and PC screen */
 @media only screen and (min-width: 26.8125em) {
+
     .menu-icon-on-mobile,
     .mobile-sign {
         display: none;
@@ -208,5 +229,19 @@
     .blog__posts-items {
         padding: 0 5px;
         margin-bottom: 8px;
+    }
+
+    .drawer {
+        padding: 0 20px 20px;
+    }
+
+    .drawer--right {
+        width: 400px;
+        right: -400px;
+    }
+
+    body .drawer--right {
+        transform: translate(-400px);
+        transition: all ease .3s;
     }
 }
