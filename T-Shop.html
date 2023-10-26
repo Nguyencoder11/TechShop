@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="js-drawer-open-right">
 
 <head>
     <meta charset="UTF-8">
@@ -19,15 +19,202 @@
     <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
 </head>
 
-<body>
+<body class="js-drawer-open-right js-drawer-open-left">
     <!-- Menu left -->
-    <div class="navDrawer"></div>
+    <div id="navDrawer" class="drawer drawer--left" tabindex="">
+        <div class="drawer__fixed-header">
+            <div class="drawer__header">
+                <div class="drawer__close drawer__close--left">
+                    <button type="button" class="button-close icon-fallback-text drawer__close-button js-drawer-close">
+                        <span class="icon icon-x">
+                            <i class="ti-close"></i>
+                        </span>
+                        <!-- <span class="fallback-text">Close menu</span> -->
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="drawer__inner">
+            <!-- begin mobile nav -->
+            <ul class="mobile-nav">
+                <li class="mobile-nav__item">
+                    <div class="mobile-nav__has-sublist">
+                        <a href="#" class="mobile-nav__link" id="">Home</a>
+                        <div class="mobile-nav__toogle">
+                            <button type="button" class="button-close mobile-nav__toogle-btn icon-fallback-text"
+                                data-aria-controls="" aria-expanded="" aria-controls="">
+                                <span class="icon-fallback-text mobile-nav__toogle-open">
+                                    <span class="icon icon-plus">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </span>
+                                </span>
+                                <span class="icon-fallback-text mobile-nav__toogle-close">
+                                    <span class="icon icon-minus">
+                                        <!-- <i class="fa-solid fa-minus"></i> -->
+                                    </span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="mobile-nav__sublist" id="" aria-labelledby=""></ul>
+                </li>
+                <li class="mobile-nav__item">
+                    <div class="mobile-nav__has-sublist">
+                        <a href="#" class="mobile-nav__link" id="">Mega menu</a>
+                        <div class="mobile-nav__toogle">
+                            <button type="button" class="button-close mobile-nav__toogle-btn icon-fallback-text"
+                                data-aria-controls="" aria-expanded="" aria-controls="">
+                                <span class="icon-fallback-text mobile-nav__toogle-open">
+                                    <span class="icon icon-plus">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </span>
+                                </span>
+                                <span class="icon-fallback-text mobile-nav__toogle-close">
+                                    <span class="icon icon-minus">
+                                        <!-- <i class="fa-solid fa-minus"></i> -->
+                                    </span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="mobile-nav__sublist" id="" aria-labelledby=""></ul>
+                </li>
+                <li class="mobile-nav__item">
+                    <div class="mobile-nav__has-sublist">
+                        <a href="#" class="mobile-nav__link" id="">Collection layout</a>
+                        <div class="mobile-nav__toogle">
+                            <button type="button" class="button-close mobile-nav__toogle-btn icon-fallback-text"
+                                data-aria-controls="" aria-expanded="" aria-controls="">
+                                <span class="icon-fallback-text mobile-nav__toogle-open">
+                                    <span class="icon icon-plus">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </span>
+                                </span>
+                                <span class="icon-fallback-text mobile-nav__toogle-close">
+                                    <span class="icon icon-minus">
+                                        <!-- <i class="fa-solid fa-minus"></i> -->
+                                    </span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="mobile-nav__sublist" id="" aria-labelledby=""></ul>
+                </li>
+                <li class="mobile-nav__item">
+                    <div class="mobile-nav__has-sublist">
+                        <a href="#" class="mobile-nav__link" id="">Pages</a>
+                        <div class="mobile-nav__toogle">
+                            <button type="button" class="button-close mobile-nav__toogle-btn icon-fallback-text"
+                                data-aria-controls="" aria-expanded="" aria-controls="">
+                                <span class="icon-fallback-text mobile-nav__toogle-open">
+                                    <span class="icon icon-plus">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </span>
+                                </span>
+                                <span class="icon-fallback-text mobile-nav__toogle-close">
+                                    <span class="icon icon-minus">
+                                        <!-- <i class="fa-solid fa-minus"></i> -->
+                                    </span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="mobile-nav__sublist" id="" aria-labelledby=""></ul>
+                </li>
+                <li class="mobile-nav__item">
+                    <div class="mobile-nav__has-sublist">
+                        <a href="#" class="mobile-nav__link" id="">Blog</a>
+                        <div class="mobile-nav__toogle">
+                            <button type="button" class="button-close mobile-nav__toogle-btn icon-fallback-text"
+                                data-aria-controls="" aria-expanded="" aria-controls="">
+                                <span class="icon-fallback-text mobile-nav__toogle-open">
+                                    <span class="icon icon-plus">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </span>
+                                </span>
+                                <span class="icon-fallback-text mobile-nav__toogle-close">
+                                    <span class="icon icon-minus">
+                                        <!-- <i class="fa-solid fa-minus"></i> -->
+                                    </span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="mobile-nav__sublist" id="" aria-labelledby=""></ul>
+                </li>
+                <li class="mobile-nav__item">
+                    <div class="mobile-nav__has-sublist">
+                        <a href="#" class="mobile-nav__link" id="">Contact us</a>
+                        <div class="mobile-nav__toogle">
+                            <button type="button" class="button-close mobile-nav__toogle-btn icon-fallback-text"
+                                data-aria-controls="" aria-expanded="" aria-controls="">
+                                <span class="icon-fallback-text mobile-nav__toogle-open">
+                                    <span class="icon icon-plus">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </span>
+                                </span>
+                                <span class="icon-fallback-text mobile-nav__toogle-close">
+                                    <span class="icon icon-minus">
+                                        <!-- <i class="fa-solid fa-minus"></i> -->
+                                    </span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="mobile-nav__sublist" id="" aria-labelledby=""></ul>
+                </li>
+                <li class="mobile-nav__item mobile-nav__item--secondary">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="#" id="customer_login_link">
+                        Log In
+                    </a>
+                </li>
+                <li class="mobile-nav__item mobile-nav__item--secondary">
+                    <i class="fa-solid fa-file-invoice"></i>
+                    <a href="#" id="customer_register_link">
+                        Create Account
+                    </a>
+                </li>
+                <li class="site-nav__item nav-currency">
+                    <i class="fa-solid fa-money-bill"></i>
+                    <span class="name">
+                        <div class="doubly-wrapper"></div>
+                    </span>
+                </li>
+            </ul>
+            <!-- /snippets/search-bar.liquid -->
+            <form action="/search" method="get" class="input-group search-bar search-bar--drawer" role="search"
+                style="position: relative;">
+
+            </form>
+            <!-- end mobile nav -->
+        </div>
+    </div>
 
     <!-- Cart menu -->
-    <div id="cartDrawer" class="drawer drawer--right drawer--has-fixed-footer"></div>
+    <div id="cartDrawer" class="drawer drawer--right drawer--has-fixed-footer" tabindex="">
+        <div class="drawer__fixed-header">
+            <div class="drawer__header">
+                <div class="drawer__title">Your cart</div>
+                <div class="drawer__close">
+                    <button type="button" class="button-close icon-fallback-text drawer__close-button jsdrawer-close">
+                        <span class="icon icon-x">
+                            <i class="ti-close"></i>
+                        </span>
+                        <!-- <span class="fallback-text">Close Cart</span> -->
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="drawer__inner">
+            <div id="cartContainer" class="drawer__cart">
+                <p style="font-size: 1.4rem;">Your cart is currently empty.</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Main content -->
-    <div class="app">
+    <div class="app is-moved-by-drawer is-transitioning">
         <!-- Header -->
         <header class="header fixed-menu">
             <div class="grid">
@@ -289,7 +476,9 @@
                             <i class="span-icon span-icon--hidden span-icon--search fa-solid fa-magnifying-glass"></i>
                         </div>
                         <div class="header__search-icon header__search-icon--second">
-                            <i class="span-icon span-icon--cart fa-solid fa-cart-shopping"></i>
+                            <a href="#" aria-controls="cartDrawer" aria-expanded="true">
+                                <i class="span-icon span-icon--cart fa-solid fa-cart-shopping"></i>
+                            </a>
                             <span class="header__search-icon--second header__search-span--count">5</span>
                         </div>
 
