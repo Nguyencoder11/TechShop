@@ -51,6 +51,37 @@ h2::after {
     padding: 0 16px;
 }
 
+.drawer {
+    display: none;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    top: 0;
+    bottom: 0;
+    padding: 0 10px 10px;
+    max-width: 95%;
+    z-index: 10;
+    color: #fff;
+    background-color: #1c1d1d;
+    transition: all .35s cubic-bezier(.46, .01, .32, 1);
+}
+
+.drawer--right {
+    width: 300px;
+    right: -300px;
+}
+
+.drawer {
+    overflow: hidden;
+}
+
+body .drawer--right {
+    /* display: block; */
+    transform: translate(-300px);
+    transition: all ease .3s;
+}
+
 .tabs__wrapper-items {
     width: 25%;
     padding: 15px;
@@ -551,6 +582,7 @@ input[id="input"]::placeholder {
 .featured__wrap,
 .blog__posts {
     padding: 0 16px;
+    margin-top: 64px;
 }
 
 .tabs__nav {
