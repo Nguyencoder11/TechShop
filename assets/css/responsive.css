@@ -143,7 +143,9 @@
         font-size: 1.57143em;
     }
 
+    /* Opened left menu */
     .js-drawer-open-left .drawer--left {
+        display: block;
         transform: translate(300px);
     }
 }
