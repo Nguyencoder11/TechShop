@@ -1,3 +1,34 @@
+.js-drawer-open {
+    overflow: hidden;
+}
+
+input,
+textarea,
+select {
+    border: 1px solid #1c1d1d;
+    max-width: 100%;
+    padding: 8px 10px;
+    border-radius: 0;
+}
+
+input,
+textarea,
+select {
+    font-style: italic;
+    font-size: 1.28571em;
+    border-color: transparent;
+    background-color: #f6f6f6;
+    color: #1c1d1d;
+    transition: opacity .4s ease-out;
+}
+
+input,
+textarea,
+select {
+    font-size: 14px;
+    font-style: normal;
+}
+
 .app {
     overflow: hidden;
 }
@@ -95,11 +126,7 @@ h2::after {
     left: -300px;
 }
 
-/* Opened left menu */
-.js-drawer-open-left .drawer--left {
-    display: block;
-    /* transform: translate(300px); */
-}
+
 
 /* Opened right cart */
 .js-drawer-open-right .drawer--right {
@@ -226,6 +253,19 @@ h2::after {
     display: block;
 }
 
+.mobile-nav__item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    border-bottom: 1px solid #343535;
+}
+
+.mobile-nav__item.mobile-nav__item--secondary::after {
+    border-bottom: none;
+}
+
 .mobile-nav>.mobile-nav__item {
     background-color: #1c1d1d;
 }
@@ -233,13 +273,6 @@ h2::after {
 .mobile-nav__item a {
     display: block;
     font-size: 22px;
-}
-
-.mobile-nav__item a,
-.mobile-nav__toggle button {
-    color: #fff;
-    padding: 10px;
-    text-decoration: none;
 }
 
 .mobile-nav__item--secondary a {
@@ -285,6 +318,176 @@ h2::after {
     padding: 10px;
     text-decoration: none;
 }
+
+.mobile-nav__toogle-open {
+    display: block;
+}
+
+.mobile-nav--expanded .mobile-nav__toggle-open,
+.mobile-nav__toogle-close {
+    display: none;
+}
+
+.mobile-nav--expanded .mobile-nav__toggle-close {
+    display: block;
+}
+
+.mobile-nav__sublist .mobile-nav__item::after {
+    top: 0;
+    bottom: auto;
+}
+
+.mobile-nav__sublist {
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: all .3s cubic-bezier(.57, .06, .05, .95);
+}
+
+.mobile-nav--expanded+.mobile-nav__sublist {
+    visibility: visible;
+    max-height: 700px;
+    transition: all .7s cubic-bezier(.57, .06, .05, .95);
+}
+
+.mobile-nav__sublist .mobile-nav__link {
+    padding-left: 20px;
+    font-weight: 400;
+}
+
+.mobile-nav li.mobile-nav__item .megamenu__dropdown .nav-sub-mega a,
+.mobile-nav li.mobile-nav__item .mobile-nav__sublist li a {
+    text-transform: none;
+}
+
+.mobile-nav__item--secondary {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-nav__item--secondary i {
+    font-size: 1.4rem;
+}
+
+.mobile-nav li.nav-currency i {
+    display: none;
+}
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+.search-bar {
+    max-width: 100%;
+}
+
+.search-bar--drawer {
+    margin-bottom: 10px;
+}
+
+.search-bar--drawer {
+    display: block;
+}
+
+.input-group-field,
+.input-group-btn {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.input-group .btn,
+.input-group .btn--secondary,
+.input-group .input-group-field {
+    height: 37px;
+}
+
+.input-group .input-group-field {
+    width: 100%;
+}
+
+.input-group .btn,
+.input-group .btn--secondary,
+.input-group .input-group-field {
+    height: 45px;
+}
+
+.search-bar--drawer input.input-group-field {
+    display: block;
+    width: 100%;
+    background: rgba(255, 255, 255, .1);
+    color: #fff;
+}
+
+.input-group .input-group-field:first-child {
+    border-radius: 0;
+}
+
+.input-group-btn {
+    position: relative;
+    white-space: nowrap;
+    width: 1%;
+    padding: 0;
+}
+
+.search-bar--drawer .input-group-btn {
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.drawer .btn--secondary {
+    font: 400 14px/1.15 Lato;
+    color: #fff;
+    background: #f9ba48;
+    padding: 11px 15px;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+.search-bar--drawer .input-group-btn .btn--secondary {
+    background: none;
+    border: none;
+}
+
+.input-group-btn .icon-fallback-text .fallback-text {
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+}
+
+.mobile-download-app {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mobile-download-app .icon-store {
+    display: flex;
+    flex-direction: row;
+    width: inherit;
+    padding: 10px;
+}
+
+.mobile-download-app .icon-store img {
+    width: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+
+
 
 
 
@@ -345,6 +548,7 @@ header {
 
 .menu-icon-on-mobile {
     padding: 10px 16px;
+    cursor: pointer;
 }
 
 .menu-icon-on-mobile .ic-menu-icon {
