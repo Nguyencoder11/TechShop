@@ -372,6 +372,10 @@ h2::after {
     align-items: center;
 }
 
+.mobile-nav__item--secondary {
+    margin-left: 10px;
+}
+
 .mobile-nav__item--secondary i {
     font-size: 1.4rem;
 }
