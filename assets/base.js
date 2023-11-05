@@ -39,43 +39,44 @@ document.addEventListener('click', function (event) {
 // Menu left
 var mobileNavHasSublist = document.querySelectorAll(".mobile-nav__has-sublist");
 mobileNavHasSublist.forEach(function (item) {
-    var sideMenuBtn = item.querySelector(".mobile-nav__toogle-btn");
+    var mobileNav_toogleBtn = item.querySelector(".mobile-nav__toogle-btn");
     var sideSubmenu = item.querySelector(".mobile-nav__sublist");
 
-    sideMenuBtn.addEventListener("click", function () {
+    mobileNav_toogleBtn.addEventListener("click", function () {
         item.classList.toggle("mobile-nav--expanded");
         // sideSubmenu.style.maxHeight = item.classList.contains("mobile-nav--expanded") ? "700px" : "0";
 
-        var sideMenuOpen = item.querySelector(".mobile-nav__toogle-open");
-        var sideMenuClose = item.querySelector(".mobile-nav__toogle-close");
-        sideMenuBtn.setAttribute("aria-expanded", item.classList.contains("mobile-nav--expanded"));
+        var toogleOpenBtn = item.querySelector(".mobile-nav__toogle-open");
+        var toogleCloseBtn = item.querySelector(".mobile-nav__toogle-close");
+        mobileNav_toogleBtn.setAttribute("aria-expanded", item.classList.contains("mobile-nav--expanded"));
 
         if (item.classList.contains("mobile-nav--expanded")) {
-            sideMenuOpen.style.display = "none";
-            sideMenuClose.style.display = "block";
+            toogleOpenBtn.style.display = "none";
+            toogleCloseBtn.style.display = "block";
         } else {
-            sideMenuOpen.style.display = "block";
-            sideMenuClose.style.display = "none";
+            toogleOpenBtn.style.display = "block";
+            toogleCloseBtn.style.display = "none";
         }
     });
 });
 
 
 // Open and close menu on mobile screeen
-var menuMobileBtn = document.querySelector(".menu-icon-on-mobile");
-var closeMenuIcon = document.querySelector(".drawer__close-button");
-var appContent = document.querySelector(".app");
 var html = document.querySelector('html');
-menuMobileBtn.addEventListener('click', function () {
-    appContent.style.transform = "translateX(300px)";
-    appContent.style.overflow = "hidden";
+var app = document.querySelector(".app");
+var mobileBarBtn = document.querySelector(".menu-icon-on-mobile");
+var mobileCloseBtn = document.querySelector(".drawer__close-button");
+var navDrawer = document.querySelector("#navDrawer");
+mobileBarBtn.addEventListener('click', function () {
     html.classList.add("js-drawer-open", "js-drawer-open-left");
     document.body.classList.add("js-drawer-open", "js-drawer-open-left");
+    app.classList.add("is-transitioning");
+    navDrawer.setAttribute("tabindex", "-1");
 });
 
-closeMenuIcon.addEventListener('click', function () {
-    appContent.style.transform = "translateX(0)";
-    appContent.style.overflow = "auto";
+mobileCloseBtn.addEventListener('click', function () {
     html.classList.remove("js-drawer-open", "js-drawer-open-left");
     document.body.classList.remove("js-drawer-open", "js-drawer-open-left");
+    app.classList.remove("is-transitioning");
+    navDrawer.setAttribute("tabindex", "");
 });
