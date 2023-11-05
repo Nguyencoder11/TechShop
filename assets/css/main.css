@@ -29,10 +29,6 @@ select {
     font-style: normal;
 }
 
-.app {
-    overflow: hidden;
-}
-
 .is-transitioning {
     display: block !important;
     visibility: visible !important;
@@ -42,15 +38,15 @@ select {
     transition: all .35s cubic-bezier(.46, .01, .32, 1);
 }
 
-/* .js-drawer-open-right .is-moved-by-drawer {
-    transform: translate(-300px);
-} */
+.js-drawer-open-left .is-moved-by-drawer {
+    transform: translate(300px);
+}
 
 .is-moved-by-drawer.is-transitioning {
     position: relative;
 }
 
-/* .is-moved-by-drawer.is-transitioning:before {
+.is-moved-by-drawer.is-transitioning:before {
     content: "";
     position: absolute;
     top: 0;
@@ -59,6 +55,14 @@ select {
     bottom: 0;
     background: rgba(0, 0, 0, .3);
     z-index: 1000;
+}
+
+#PageContainer {
+    overflow: hidden;
+}
+
+/* #PageContainer {
+    overflow: visible;
 } */
 
 h3 {
