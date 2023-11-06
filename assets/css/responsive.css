@@ -145,8 +145,12 @@
 
     /* Opened left menu */
     .js-drawer-open-left .drawer--left {
-        display: block;
         transform: translate(300px);
+    }
+
+    /* Opened right cart */
+    .js-drawer-open-right .drawer--right {
+        transform: translate(-300px);
     }
 }
 
@@ -245,9 +249,9 @@
         transform: translate(-400px);
     }
 
-    /* .js-drawer-open-right .is-moved-by-drawer {
+    .js-drawer-open-right .is-moved-by-drawer {
         transform: translate(-400px);
-    } */
+    }
 
     .drawer {
         padding: 0 20px 20px;
