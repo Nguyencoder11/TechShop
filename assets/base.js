@@ -1,4 +1,4 @@
-// Automatic Slideshow - change image every 4 seconds
+// Automatic Slideshow - change image every 5 seconds
 var myIndex = 0;
 nextSlide();
 function nextSlide() {
@@ -21,9 +21,10 @@ var searchInput = document.querySelector('.search-input');
 var spanIcon = document.querySelector('.span-icon--search');
 searchIcon.addEventListener('click', function () {
     searchInput.style.display = 'block';
-    searchIcon.style.background = 'white';
-    spanIcon.style.color = 'gray';
+    searchIcon.style.background = '#fff';
+    spanIcon.style.color = 'rgb(165, 0, 165)';
 });
+
 
 // When clicking anywhere not be search-icon -> display input none
 document.addEventListener('click', function (event) {
@@ -64,19 +65,44 @@ mobileNavHasSublist.forEach(function (item) {
 // Open and close menu on mobile screeen
 var html = document.querySelector('html');
 var app = document.querySelector(".app");
-var mobileBarBtn = document.querySelector(".menu-icon-on-mobile");
-var mobileCloseBtn = document.querySelector(".drawer__close-button");
+
+var menubarIcon = document.querySelector(".menu-icon-on-mobile");
+var cartIcon = document.querySelector(".header__search-icon.header__search-icon--second");
+
+var navDrawerCloseBtn = document.querySelector(".nav-drawer__close-button");
+var cartDrawerCloseBtn = document.querySelector(".cart-drawer__close-button");
+
 var navDrawer = document.querySelector("#navDrawer");
-mobileBarBtn.addEventListener('click', function () {
+var cartDrawer = document.querySelector("#cartDrawer");
+
+// Open navDrawer
+menubarIcon.addEventListener('click', function () {
     html.classList.add("js-drawer-open", "js-drawer-open-left");
     document.body.classList.add("js-drawer-open", "js-drawer-open-left");
     app.classList.add("is-transitioning");
     navDrawer.setAttribute("tabindex", "-1");
 });
 
-mobileCloseBtn.addEventListener('click', function () {
+// Open cartDrawer
+cartIcon.addEventListener("click", function () {
+    html.classList.add("js-drawer-open", "js-drawer-open-right");
+    document.body.classList.add("js-drawer-open", "js-drawer-open-right");
+    app.classList.add("is-transitioning");
+    cartDrawer.setAttribute("tabindex", "-1");
+});
+
+// Close navDrawer
+navDrawerCloseBtn.addEventListener('click', function () {
     html.classList.remove("js-drawer-open", "js-drawer-open-left");
-    document.body.classList.remove("js-drawer-open", "js-drawer-open-left");
+    document.body.classList.remove("js-drawer-open", "js-drawer-open-left", "js-drawer-open-right");
     app.classList.remove("is-transitioning");
     navDrawer.setAttribute("tabindex", "");
+});
+
+// Close cartDrawer
+cartDrawerCloseBtn.addEventListener('click', function () {
+    html.classList.remove("js-drawer-open", "js-drawer-open-right");
+    document.body.classList.remove("js-drawer-open", "js-drawer-open-right");
+    app.classList.remove("is-transitioning");
+    cartDrawer.setAttribute("tabindex", "");
 });
