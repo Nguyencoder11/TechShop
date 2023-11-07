@@ -21,7 +21,7 @@ var searchInput = document.querySelector('.search-input');
 var spanIcon = document.querySelector('.span-icon--search');
 searchIcon.addEventListener('click', function () {
     searchInput.style.display = 'block';
-    searchIcon.style.background = '#fff';
+    searchIcon.style.background = '#f6f6f6';
     spanIcon.style.color = 'rgb(165, 0, 165)';
 });
 
@@ -94,7 +94,7 @@ cartIcon.addEventListener("click", function () {
 // Close navDrawer
 navDrawerCloseBtn.addEventListener('click', function () {
     html.classList.remove("js-drawer-open", "js-drawer-open-left");
-    document.body.classList.remove("js-drawer-open", "js-drawer-open-left", "js-drawer-open-right");
+    document.body.classList.remove("js-drawer-open", "js-drawer-open-left");
     app.classList.remove("is-transitioning");
     navDrawer.setAttribute("tabindex", "");
 });
@@ -106,3 +106,4 @@ cartDrawerCloseBtn.addEventListener('click', function () {
     app.classList.remove("is-transitioning");
     cartDrawer.setAttribute("tabindex", "");
 });
+
