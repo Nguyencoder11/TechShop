@@ -1,9 +1,18 @@
 /* Only Mobile Screen */
 @media only screen and (max-width: 26.75em) {
-    .header__nav {}
+    :root {
+        --header-height: 86px;
+        --navbar-height: 0;
+    }
 
-    .header__nav-lists {
+    .header__nav,
+    .header__nav-lists,
+    .header__search-icon--first {
         display: none;
+    }
+
+    .header__search-icon.header__search-icon--second a i:hover {
+        color: #f9ba48;
     }
 
     .header__container,
@@ -18,7 +27,7 @@
     .header__search-area {
         display: flex;
         justify-content: flex-end;
-        padding-right: 20px;
+        padding-right: 10px;
     }
 
     .move__wrap-column,
@@ -114,6 +123,9 @@
 
 /* Tablet and Mobile screen */
 @media only screen and (max-width: 55.25em) {
+    .grid {
+        padding: 0;
+    }
 
     .header__menu {
         display: none;
@@ -156,6 +168,10 @@
 
 /* Only PC Screen */
 @media only screen and (min-width: 55.3125em) {
+    .menu-icon-on-mobile {
+        display: none;
+    }
+
     .blog__posts-items.tab {
         width: 25%;
     }
@@ -163,8 +179,6 @@
 
 /* Tablet and PC screen */
 @media only screen and (min-width: 26.8125em) {
-
-    .menu-icon-on-mobile,
     .mobile-sign {
         display: none;
     }
@@ -274,5 +288,18 @@
 
     .drawer__close-button {
         right: 0;
+    }
+}
+
+
+/* Only tablet screen */
+@media only screen and ((min-width: 26.8125em) and (max-width: 55.25em)) {
+    .header__nav {
+        padding: 0 16px;
+    }
+
+    .header__container {
+        padding: 0;
+        padding-right: 10px;
     }
 }
