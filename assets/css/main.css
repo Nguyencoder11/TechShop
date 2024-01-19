@@ -1049,8 +1049,9 @@ input[id="input"]::placeholder {
 }
 
 .tabs__nav li:first-child .active {
-    color: #151515;
+    color: #68006c;
     opacity: 1;
+    font-weight: 600;
 }
 
 .tabs__wrapper-items--group {
